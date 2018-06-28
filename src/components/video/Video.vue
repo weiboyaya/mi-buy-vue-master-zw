@@ -14,6 +14,7 @@
         </div>
 
         <div class="video-mask" v-if="selecVideo"></div>
+        <transition name="video">
         <div class="video-float-container" v-if="selecVideo" >
             <div class="video-float-head">
                 <div class="video-float-title">
@@ -30,6 +31,7 @@
                 </video>
             </div>
         </div>
+        </transition>
     </div>
 </template>
 <script>
@@ -228,5 +230,29 @@ export default {
     position: absolute;
     width: 880px;
     height:auto;
+}
+
+/*.video-enter-active, .video-leave-active {
+  transition: opacity .5s;
+}
+.video-enter, .video-leave-to {
+  opacity: 0;
+}*/
+.video-enter-active {
+  animation: bounce-in 1s;
+}
+.video-leave-active {
+  animation: bounce-in 1s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>
