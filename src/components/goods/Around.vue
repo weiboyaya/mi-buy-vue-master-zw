@@ -216,7 +216,7 @@ export default {
 }
 .around-left-img2{
     position: absolute;
-    top: 314px;
+    top: 310px;
     left: 0;
     float: left;
     height: 300px;
@@ -225,7 +225,7 @@ export default {
 }
 .around-left-img2:hover{
     position: absolute;
-    top: 314px;
+    top: 310px;
     left: 0;
     float: left;
     height: 300px;

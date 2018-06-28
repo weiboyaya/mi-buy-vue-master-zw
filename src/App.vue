@@ -5,6 +5,9 @@
     <Nav></Nav>
     <HomeSub></HomeSub>
     <Goods></Goods>
+    <Recommend></Recommend>
+    <Video></Video>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -14,6 +17,11 @@ import TopBar from './components/bar/TopBar.vue'
 import Nav from './components/nav/Nav.vue'
 import HomeSub from './components/homeSub/HomeSub.vue'
 import Goods from './components/goods/Goods.vue'
+import Recommend from './components/recommend/Recommend.vue'
+import Video from './components/Video/Video.vue'
+import Footer from './components/footer/Footer.vue'
+
+
 
 export default {
   components:{
@@ -21,7 +29,10 @@ export default {
     TopBar,
     Nav,
     HomeSub,
-    Goods
+    Goods,
+    Recommend,
+    Video,
+    Footer
   }
 }
 </script>
